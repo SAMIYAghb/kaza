@@ -1,9 +1,11 @@
-import React from 'react'
+import style from './Footer.module.css';
+import logo from '../../assets/footerLogo.png'
 
 const Footer = () => {
   return (
-    <div>
-      
+    <div className={style.footer}>
+      <img src={logo} alt="logo of footer" className={style.footerLogo}/>
+      <p>© 2020 Kasa. All rights reserved</p>
     </div>
   )
 }

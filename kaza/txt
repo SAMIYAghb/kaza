@@ -1,0 +1,16 @@
+// import React from 'react';
+// import { useParams } from 'react-router-dom';
+
+// const House = () => {
+//   const { id } = useParams();
+
+//   // Utilisez l'id pour récupérer et afficher les détails de la maison
+//   return (
+//     <div>
+//       <h1>House ID: {id}</h1>
+//       {/* Afficher les détails de la maison ici */}
+//     </div>
+//   );
+// };
+
+// export default House;

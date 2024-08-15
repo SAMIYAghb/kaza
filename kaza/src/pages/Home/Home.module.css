@@ -1,0 +1,24 @@
+.cards{
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    padding: 50px ;
+    row-gap: 60px;
+    column-gap: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media (max-width: 480px) {
+    .cards{
+        flex-direction: column;
+    }  
+}
+.link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.67px;
+    /* padding: 10px; */
+}
