@@ -5,25 +5,65 @@
     justify-content: space-between;
     align-items: center;
 }
+.houseITitle{
+    color: #FF6060;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51.34px;
+}
+.host{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+}
+.hostName{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+    color: #FF6060;
+    width: 50%;
+}
+.hostImg{
+    width: 64px;
+    height: 64px;
+    object-fit: cover; 
+}
 .houseContent{
-    background-color: blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .tags{
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
 }
 .tag{
     background-color: #FF6060;
     color: #fff;
-    padding: 10px 20px;
+    padding: 5px 12px;
     border-radius: 10px ;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.96px;
+}
+.rates{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 8px; */
+}
+.rate{
+    width: 36px;
+    height: 36px;
 }
 .houseCollapses{
     background-color: brown;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .houseCollapse{
