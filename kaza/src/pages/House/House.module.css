@@ -1,0 +1,33 @@
+
+.houseHeader{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.houseContent{
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tags{
+
+}
+.tag{
+    background-color: #FF6060;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px ;
+}
+.houseCollapses{
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.houseCollapse{
+    background-color: chartreuse;
+    width: 50%;
+    
+}
