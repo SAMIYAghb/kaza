@@ -23,9 +23,21 @@
 }
 .cardTitle{
     position: relative;
-    /* top: -45px; */
     bottom: 70px;
     left: 20px;
-    width: 80%;
-    /* padding-bottom: 40px; */
+    width: calc(100% - 40px);
+    align-self: baseline;
+}
+
+
+/* @media (max-width: 768px) {
+    .card{
+        background-color: rgb(255, 196, 0);
+        width: calc((100% / 2) - 80px);
+    }
+} */
+@media (max-width: 480px) {
+    .card{
+        width: 100%;
+    }
 }

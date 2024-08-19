@@ -3,11 +3,11 @@
     position: relative;
     top : 0;
     left: 0;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 .logoImg{
     width: 210px;
@@ -26,14 +26,30 @@
     font-size: 24px;
     font-weight: 500;
     line-height:34.22px;
-    /* padding: 10px; */
 }
 .activeLink {
     border-bottom: 2px solid #000;
 }
 @media (max-width: 768px) {
-
+    .logoImg{
+        width: 145px;
+        height: 46.88px;
+    }
+    .link {
+        font-size: 18px;
+        line-height: 25px;
+    }
 }
 @media (max-width: 480px) {
-    
+    .header{
+        padding: 15px 25px;
+    }
+    .logoImg{
+        width: 145px;
+        height: 46.88px;
+    }
+    .link {
+        font-size: 12px;
+        line-height: 17.11px;
+    }
 }
