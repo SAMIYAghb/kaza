@@ -1,5 +1,5 @@
 .banner{
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,3 +13,36 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.imgParent{
+    width: 100%;
+}
+.imgBanner{
+    width: 100%;
+}
+@media (max-width: 768px){
+    .banner{
+       
+    }
+}
+/* @media (max-width: 992px){ 
+    .imgBanner{
+        width: 920px;
+    }
+  }
+  @media (max-width: 768px){ 
+    .imgBanner{
+        width: 680px;
+    }
+  }
+  @media (max-width: 576px){ 
+    .imgBanner{
+        width: 500px;
+    }
+  }
+    @media (max-width: 480px) {
+    .imgBanner{
+        width: 335px;
+        height: 111px;
+    }
+
+} */

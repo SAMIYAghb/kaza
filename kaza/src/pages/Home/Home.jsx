@@ -8,6 +8,7 @@ import style from './Home.module.css'
 import data from '../../data/logements.json'
 import { Link } from 'react-router-dom';
 import banner from '../../assets/banner.png'
+// import banner from '../../assets/homeBanner.png'
 // import { useLoaderData,Link } from 'react-router-dom';
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
   return (  
     <>
     <Navigation/>
-    <Banner bannerImage={ banner }/>
+    <Banner bannerImage={ banner } />
       <Container>
         <div className={style.cards}>
           {data.map((logement)=>

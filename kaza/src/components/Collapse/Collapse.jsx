@@ -3,7 +3,7 @@ import arrow from '../../assets/arrow_back.png'
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const Collapse = ({id, title, content}) => {
+const Collapse = ({ title, content}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -11,7 +11,7 @@ const Collapse = ({id, title, content}) => {
   }
 
   return (
-    <div className={style.collapse} id={id}>
+    <div className={style.collapse}>
       <div className={style.collapseHeader} onClick={toggleCollapse} >
         <h3 className={style.collapseTitle}>{title}</h3>
         <span >

@@ -5,17 +5,24 @@
     justify-content: space-between;
     align-items: center;
 }
-.houseITitle{
+/* .houseITitle{
     color: #FF6060;
     font-size: 36px;
     font-weight: 500;
     line-height: 51.34px;
+} */
+
+.hostContent{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+
 }
 .host{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    /* gap: 10px; */
 }
 .hostName{
     font-size: 18px;
@@ -25,18 +32,21 @@
     width: 50%;
 }
 .hostImg{
+    align-self: flex-end;
     width: 64px;
     height: 64px;
+    border-radius: 50%;
     object-fit: cover; 
 }
-.houseContent{
+/* .houseContent{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 .tags{
+    /* width: 90%; */
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     gap: 10px;
     padding: 10px;
@@ -50,24 +60,41 @@
     font-weight: 700;
     line-height: 19.96px;
 }
-.rates{
+/* .rates{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* gap: 8px; */
-}
+
+} */
 .rate{
     width: 36px;
     height: 36px;
 }
 .houseCollapses{
-    background-color: brown;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    align-items: flex-start;
+    flex-wrap: nowrap; 
+
 }
 .houseCollapse{
-    background-color: chartreuse;
-    width: 50%;
-    
+    flex: 1;
+    max-width: 50%;
+    padding: 20px; 
+}
+
+
+/* .houseBody{
+    display: flex;
+    flex-direction: column;
+} */
+@media (max-width: 576px){
+    .houseHeader{
+        flex-direction: column;
+
+    }
+    .hostContent{
+        
+    }
 }

@@ -6,7 +6,9 @@ function Banner({ bannerImage }) {
   return (
     <div className={style.banner}>
       <Container>
-        <img src={ bannerImage } alt="banner of kaza" className={style.imgBanner}/>
+        <div className={style.imgParent}>
+          <img src={ bannerImage } alt="banner of kaza" className={style.imgBanner}/>
+        </div>
         <h1 className={style.bannerTitle}>Chez vous, partout et ailleurs</h1>
       </Container>
     </div>
