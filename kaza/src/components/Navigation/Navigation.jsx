@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import Logo from "../../assets/logo.png"
 import style from './Navigation.module.css'
 import Container from './../Container/Container';
@@ -8,19 +8,21 @@ const Navigation = () => {
     <header>
       <Container>
         <div className={style.header}>
-          <img src={Logo} alt="Logo kasa" className={style.logoImg}/>
+          <Link to="/">
+            <img src={Logo} alt="Logo kasa" className={style.logoImg} />
+          </Link>
           <nav className={style.nav}>
             <NavLink to="/"
-            className={({ isActive }) =>
-              isActive ? `${style.link} ${style.activeLink}` : style.link
-            }
+              className={({ isActive }) =>
+                isActive ? `${style.link} ${style.activeLink}` : style.link
+              }
             >
               Accueil
             </NavLink>
-            <NavLink to="/about" 
-            className={({ isActive }) =>
-              isActive ? `${style.link} ${style.activeLink}` : style.link
-            }
+            <NavLink to="/about"
+              className={({ isActive }) =>
+                isActive ? `${style.link} ${style.activeLink}` : style.link
+              }
             >
               A propos
             </NavLink>
