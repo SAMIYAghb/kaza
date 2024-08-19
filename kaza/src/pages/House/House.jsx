@@ -9,6 +9,7 @@ import Collapse from './../../components/Collapse/Collapse';
 import active from '../../assets/star-active.png'
 import inactive from '../../assets/star-inactive.png'
 import {useParams } from 'react-router-dom';
+import Error from './../Error/Error';
 
 
 const House = () => {
@@ -20,10 +21,9 @@ const House = () => {
   const house = data.find((house) => house.id === id);
   // console.log(house)
 
-  // Convertir la note en nombre
-  const rating = parseInt(house.rating, 10);
-
-  
+  if (!house) {
+    return <Error/>
+  }
 
   return (
     <>
@@ -55,7 +55,7 @@ const House = () => {
                 {[1, 2, 3, 4, 5].map((star) => (
                     <img
                       key={star}
-                      src={star <= rating ? active : inactive}
+                      src={star <= house.rating ? active : inactive}
                       alt="rate"
                       className={style.rate}
                     />
