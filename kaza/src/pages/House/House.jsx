@@ -2,20 +2,19 @@
 import { useParams } from 'react-router-dom';
 // import active from '../../assets/star-active.png';
 // import inactive from '../../assets/star-inactive.png';
-import data from '../../data/logements.json';
+// import data from '../../data/logements.json';
 import Carrousel from './../../components/Carrousel/Carrousel';
 import Collapse from './../../components/Collapse/Collapse';
 import Error from './../Error/Error';
 import style from './House.module.css';
-
+import { getLogement } from '../../request/LogementRequest.js'
 
 const House = () => {
-
   const { id } = useParams();
   // console.log(id) 
   
   // Trouver la maison correspondant à l'ID
-  const house = data.find((house) => house.id === id);
+  const house = getLogement(id);
   // console.log(house)
 
   if (!house) {
