@@ -39,9 +39,7 @@
     border-radius: 50%;
     object-fit: cover; 
 }
-
 .tags{
-    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
