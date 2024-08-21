@@ -1,11 +1,19 @@
-import React from 'react'
+import style from '../../pages/House/House.module.css'
+import PropTypes from 'prop-types';
 
-const Rating = () => {
+
+const Rating = ({ src }) => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <img
+        src={src}
+        alt="rate"
+        className={style.rate}
+      />
+    </>
   )
 }
-
+Rating.propTypes = {
+  src: PropTypes.node.isRequired,
+};
 export default Rating

@@ -1,6 +1,6 @@
 
 .houseHeader{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,12 +17,12 @@
     /* justify-content: center;
     align-items: center; */
     flex-direction: column;
-
 }
 .host{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 15px;
 }
 .hostName{
     font-size: 18px;
