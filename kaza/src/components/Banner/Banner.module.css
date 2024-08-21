@@ -6,7 +6,8 @@
     position: relative;
     margin: auto;
     color: #fff;
-    padding:  0 25px;
+    /* padding:  0 25px; */
+    margin-bottom: 25px;
 }
 .bannerTitle{
     position: absolute;

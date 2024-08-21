@@ -1,15 +1,12 @@
 
-import Navigation from './../../components/Navigation/Navigation';
-import Footer from './../../components/Footer/Footer';
+import { useParams } from 'react-router-dom';
+import active from '../../assets/star-active.png';
+import inactive from '../../assets/star-inactive.png';
+import data from '../../data/logements.json';
 import Carrousel from './../../components/Carrousel/Carrousel';
-import data from '../../data/logements.json'
-import Container from './../../components/Container/Container';
-import style from './House.module.css'
 import Collapse from './../../components/Collapse/Collapse';
-import active from '../../assets/star-active.png'
-import inactive from '../../assets/star-inactive.png'
-import {useParams } from 'react-router-dom';
 import Error from './../Error/Error';
+import style from './House.module.css';
 
 
 const House = () => {
@@ -27,8 +24,6 @@ const House = () => {
 
   return (
     <>
-      <Navigation />
-      <Container>
         <>
           <Carrousel />  
           {/* {<img src= {house.pictures} alt="" />} */}
@@ -71,8 +66,6 @@ const House = () => {
             </div>
           </div>
         </>
-      </Container>
-      <Footer />
     </>
   )
 }
