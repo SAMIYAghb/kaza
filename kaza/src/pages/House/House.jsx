@@ -8,6 +8,7 @@ import Collapse from './../../components/Collapse/Collapse';
 import Error from './../Error/Error';
 import style from './House.module.css';
 import { getLogement } from '../../request/LogementRequest.js'
+import Tag from '../../components/Tag/Tag.jsx';
 
 const House = () => {
   const { id } = useParams();
@@ -31,11 +32,13 @@ const House = () => {
               <div className={style.houseInfo}>
                 <h2 className={style.houseITitle}>{house.title}</h2>
                 <p>{house.location}</p>
-                {/* <div className={style.tags}>
+                <div className={style.tags}>
                   {house.tags.map((tag)=>(
-                    <div key={house.id} className={style.tag}>{tag}</div>
+                    <Tag
+                      key={tag}
+                      tag={tag}/>
                   ))}
-                </div> */}
+                </div>
               </div>
 
               <div className={style.hostContent}>

@@ -29,4 +29,3 @@ const Home = () => {
 export default Home
 
 
-// useLoaderData est un hook fourni par react-router (dans la version 6.4 et ultérieure) qui vous permet d'accéder aux données chargées par les loaders définis dans votre configuration de routes.

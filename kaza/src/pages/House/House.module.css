@@ -38,13 +38,8 @@
     border-radius: 50%;
     object-fit: cover; 
 }
-/* .houseContent{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
+
 .tags{
-    /* width: 90%; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -60,12 +55,7 @@
     font-weight: 700;
     line-height: 19.96px;
 }
-/* .rates{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-} */
 .rate{
     width: 36px;
     height: 36px;

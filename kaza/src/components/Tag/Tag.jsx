@@ -1,11 +1,15 @@
-import React from 'react'
+import style from '../../pages/House/House.module.css';
+import PropTypes from 'prop-types';
 
-const Tag = () => {
+
+const Tag = ({tag}) => {
   return (
-    <div>
-      
+    <div className={style.tags}>
+      <div className={style.tag}>{tag}</div>
     </div>
   )
 }
-
+Tag.propTypes = {
+  tag: PropTypes.node.isRequired,
+};
 export default Tag
