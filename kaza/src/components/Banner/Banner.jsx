@@ -1,20 +1,18 @@
-import style from './Banner.module.css'
 import PropTypes from 'prop-types';
-import Container from '../Container/Container.jsx';
+import style from './Banner.module.css';
 
-function Banner({ bannerImage }) {
+function Banner({ bannerImage , bannerTitle}) {
   return (
     <div className={style.banner}>
-      <Container>
         <div className={style.imgParent}>
           <img src={ bannerImage } alt="banner of kaza" className={style.imgBanner}/>
         </div>
-        <h1 className={style.bannerTitle}>Chez vous, partout et ailleurs</h1>
-      </Container>
+        <h1 className={style.bannerTitle}>{bannerTitle}</h1>
     </div>
   )
 }
 Banner.propTypes = {
   bannerImage: PropTypes.node.isRequired,
+  bannerTitle: PropTypes.node.isRequired,
 };
 export default Banner

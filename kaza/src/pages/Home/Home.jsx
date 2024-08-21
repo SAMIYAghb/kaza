@@ -13,7 +13,7 @@ const Home = () => {
 
   return (  
     <>
-    <Banner bannerImage={ banner } />
+    <Banner bannerImage={ banner } bannerTitle='Chez vous, partout et ailleurs'/>
         <div className={style.cards}>
           {data.map((logement)=>
           // console.log(logement)

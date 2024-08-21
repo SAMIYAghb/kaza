@@ -8,17 +8,15 @@ const About = () => {
 
   return (
     <>
-      <Banner bannerImage={ banner }/>
+      <Banner bannerImage={ banner } bannerTitle=''/>
         {
           collapseData.map((col) => (
             // console.log(col)
             // console.log(collapseData)
-            <div key={col.id}>
-             <Collapse
+             <Collapse key={col.id}
               title={col.title}
               content={col.content}
             />
-            </div>
           )) 
         } 
     </>

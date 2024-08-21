@@ -40,17 +40,15 @@
 // };
 // export default Carrousel
 // import React from 'react'
-import style from './Carrousel.module.css'
-import Container from './../Container/Container';
-import banner from '../../assets/aboutBanner.png'
-import left from '../../assets/arrow_left.png'
-import right from '../../assets/arrow_right.png'
+import banner from '../../assets/aboutBanner.png';
+import left from '../../assets/arrow_left.png';
+import right from '../../assets/arrow_right.png';
+import style from './Carrousel.module.css';
 
 
 const Carrousel = () => {
   return (
     <div className={style.carrousel}>
-      <Container>
         <div className={style.carrouselContent}>
           <button className={style.previous}>
             <img src={left} alt="" />
@@ -61,7 +59,6 @@ const Carrousel = () => {
           </button>
           <span className={style.indicator}>1/4</span>
         </div>
-      </Container>
     </div>
   )
 }

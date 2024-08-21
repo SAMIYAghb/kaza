@@ -27,7 +27,6 @@ const Collapse = ({ title, content}) => {
   )
 }
 Collapse.propTypes = {
-  id: PropTypes.node.isRequired,
   title: PropTypes.node.isRequired,
   content: PropTypes.node.isRequired,
 };
