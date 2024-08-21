@@ -16,3 +16,21 @@
     font-size: 18px;
     font-weight: 500;
 }
+@media (max-width: 768px) {
+    .errorImg{
+        width: 198px;
+        height: 99px;
+    }
+    .errorTitle{
+        font-size: 18px;
+        line-height: 25.67px;
+        max-width: 260px;
+    }
+    .errorLink{
+        font-size: 14px;
+        max-width: 221px;
+    }
+}
+@media (max-width: 480px) {
+ 
+}
