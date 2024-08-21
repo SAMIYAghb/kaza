@@ -17,7 +17,7 @@ const House = () => {
 
   // Trouver la maison correspondant à l'ID
   const house = getLogement(id);
-  // console.log(house)
+  // console.log(house.pictures)
 
   if (!house) {
     return <Error />
@@ -25,8 +25,7 @@ const House = () => {
 
   return (
     <>
-      <>
-        <Carrousel />
+        <Carrousel images={house.pictures}/>
         <div className={style.houseBody}>
           <div className={style.houseHeader}>
 
@@ -64,7 +63,6 @@ const House = () => {
           </div>
         </div>
       </>
-    </>
   )
 }
 

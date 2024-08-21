@@ -9,7 +9,7 @@ const Card = ({ title, cover, id }) => {
       <div className={style.card}>
         <Link to={'/house/' + id} key={id} className={style.link}>
           <img src={cover} alt={title} className={style.cardImg} />
-          <h4 className={style.cardTitle}>{title}</h4>
+          <h2 className={style.cardTitle}>{title}</h2>
         </Link>
       </div>
     </>
