@@ -1,9 +1,10 @@
 
 .houseHeader{
-    /* background-color: aquamarine; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.houseInfo{
 }
 /* .houseITitle{
     color: #FF6060;
@@ -17,12 +18,12 @@
     /* justify-content: center;
     align-items: center; */
     flex-direction: column;
+    padding: 15px;
 }
 .host{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 15px;
 }
 .hostName{
     font-size: 18px;
@@ -40,11 +41,12 @@
 }
 
 .tags{
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    padding: 10px;
+    padding: 10px 0;
 }
 .tag{
     background-color: #FF6060;
@@ -61,19 +63,17 @@
     height: 36px;
 }
 .houseCollapses{
-    background-color: blue;
+    width: 100%;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: nowrap; 
-
+    gap: 45px;
 }
 .houseCollapse{
-    background-color: beige;
     flex: 1;
-    max-width: 50%;
-    padding: 20px 0; 
+    width: calc((100% / 2) - 45px);
+    padding-bottom: 20px; 
 }
 
 
@@ -81,7 +81,7 @@
     display: flex;
     flex-direction: column;
 } */
-@media (max-width: 576px){
+/* @media (max-width: 576px){
     .houseHeader{
         flex-direction: column;
 
@@ -89,4 +89,45 @@
     .hostContent{
         
     }
+} */
+
+@media (max-width: 768px) {
+    .houseHeader{
+        flex-direction: column;
+    }
+    .hostContent{
+        width: 90%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        /* gap: 20px; */
+    }
+    .houseInfo{
+        width: 90%;
+    }
+    .hostImg{
+        align-self: flex-end;
+        width: 32px;
+        height: 32px;
+    }
+    .hostName{
+        font-size: 12px;
+        line-height: 17.11px;
+    }
+    .rate{
+        width: 18px;
+        height: 18px;
+    }
+    .houseCollapses{
+        flex-direction: column;
+        gap: 0;
+    }
+    .houseCollapse{
+        width: 90%;
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 480px) {
+     
 }

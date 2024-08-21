@@ -17,11 +17,11 @@
     position: absolute;
 }
 .previous{
-    top: 50%;
+    top: 40%;
     left: 0;
 }
 .next{
-    top: 50%;
+    top: 40%;
     right: 0;
 }
 .indicator{
@@ -33,4 +33,18 @@
     left: 50%;
     font-size: 18px;
     line-height: 25.67px;
+}
+@media (max-width: 768px) {
+    .carrouselImg{
+        /* width: 90%; */
+        height: 255px;
+        margin: auto;
+    }
+    .previous, .next{
+        width: 24px;
+        height: 24px;
+    }
+    .previousIcon, .nextIcon{
+        width: 100%;
+    }
 }

@@ -68,7 +68,7 @@ const House = () => {
 
 export default House
 
-// +add data + responsive page house about & home
+// +add data + responsive page carrousel smarthphone image
 
 // +add googlefont Montserrat
 // +add

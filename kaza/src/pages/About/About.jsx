@@ -1,4 +1,4 @@
-
+import style from './About.module.css'
 import banner from '../../assets/banner-about.png';
 import Banner from './../../components/Banner/Banner';
 import Collapse from './../../components/Collapse/Collapse';
@@ -9,6 +9,7 @@ const About = () => {
   return (
     <>
       <Banner bannerImage={ banner } bannerTitle=''/>
+      <div className={style.about}>
         {
           collapseData.map((col) => (
             // console.log(col)
@@ -19,6 +20,7 @@ const About = () => {
             />
           )) 
         } 
+      </div>
     </>
   )
 }
