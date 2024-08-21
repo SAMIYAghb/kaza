@@ -1,7 +1,7 @@
 
 import { useParams } from 'react-router-dom';
-import active from '../../assets/star-active.png';
-import inactive from '../../assets/star-inactive.png';
+// import active from '../../assets/star-active.png';
+// import inactive from '../../assets/star-inactive.png';
 import data from '../../data/logements.json';
 import Carrousel from './../../components/Carrousel/Carrousel';
 import Collapse from './../../components/Collapse/Collapse';
@@ -25,20 +25,18 @@ const House = () => {
   return (
     <>
         <>
-          <Carrousel />  
-          {/* {<img src= {house.pictures} alt="" />} */}
-         
+          <Carrousel />           
           <div className={style.houseBody}>
             <div className={style.houseHeader}>
 
               <div className={style.houseInfo}>
                 <h2 className={style.houseITitle}>{house.title}</h2>
                 <p>{house.location}</p>
-                <div className={style.tags}>
+                {/* <div className={style.tags}>
                   {house.tags.map((tag)=>(
                     <div key={house.id} className={style.tag}>{tag}</div>
                   ))}
-                </div>
+                </div> */}
               </div>
 
               <div className={style.hostContent}>
@@ -46,7 +44,7 @@ const House = () => {
                   <p className={style.hostName}>{house.host.name}</p>
                   <img src={house.host.picture} alt={house.host.name} className={style.hostImg} />
                 </div>
-                <div className={style.rates}>
+                {/* <div className={style.rates}>
                 {[1, 2, 3, 4, 5].map((star) => (
                     <img
                       key={star}
@@ -56,7 +54,7 @@ const House = () => {
                     />
                   ))}
                   
-                </div>
+                </div> */}
               </div>
 
             </div>

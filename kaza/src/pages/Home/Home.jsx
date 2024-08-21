@@ -1,32 +1,29 @@
 
 import Banner from './../../components/Banner/Banner';
-import { Link } from 'react-router-dom';
 import banner from '../../assets/banner.png';
 import Card from '../../components/Card/Card';
 import data from '../../data/logements.json';
 import style from './Home.module.css';
-// import banner from '../../assets/homeBanner.png'
-// import { useLoaderData,Link } from 'react-router-dom';
+
 
 const Home = () => {
-  // const data = useLoaderData();
 
-  return (  
+
+  return (
     <>
-    <Banner bannerImage={ banner } bannerTitle='Chez vous, partout et ailleurs'/>
-        <div className={style.cards}>
-          {data.map((logement)=>
+      <Banner bannerImage={banner} bannerTitle='Chez vous, partout et ailleurs' />
+      <div className={style.cards}>
+        {data.map((logement) =>
           // console.log(logement)
-          <Link to={'/house/'+ logement.id} key={logement.id} className={style.link}>
-            <div>
-              <Card 
-            title = {logement.title}
-            cover = {logement.cover}         
-            />
-            </div>
-          </Link>            
-          )}
-        </div>a
+          <Card
+            key={logement.id}
+            id={logement.id}
+            title={logement.title}
+            cover={logement.cover}
+          />
+          // </Link>            
+        )}
+      </div>
     </>
   )
 }

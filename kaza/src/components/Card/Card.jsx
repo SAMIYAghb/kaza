@@ -1,21 +1,24 @@
 import style from './Card.module.css';
 import PropTypes from 'prop-types';
-// import card from '../../assets/card.png';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const Card = ({title, cover}) => {
+
+const Card = ({ title, cover, id }) => {
   return (
     <>
-        <div className={style.card}>
-          <img src={cover} alt={title} className={style.cardImg}/>
+      <div className={style.card}>
+        <Link to={'/house/' + id} key={id} className={style.link}>
+          <img src={cover} alt={title} className={style.cardImg} />
           <h4 className={style.cardTitle}>{title}</h4>
-        </div>   
+        </Link>
+      </div>
     </>
 
   )
 }
 Card.propTypes = {
-  title : PropTypes.node.isRequired,
-  cover : PropTypes.node.isRequired,
+  id: PropTypes.node.isRequired,
+  title: PropTypes.node.isRequired,
+  cover: PropTypes.node.isRequired,
 };
 export default Card

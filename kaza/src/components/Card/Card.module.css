@@ -28,7 +28,13 @@
     width: calc(100% - 40px);
     align-self: baseline;
 }
-
+.link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.67px;
+}
 
 /* @media (max-width: 768px) {
     .card{
