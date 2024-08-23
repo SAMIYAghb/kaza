@@ -36,6 +36,7 @@
 }
 @media (max-width: 768px) {
     .carrouselImg{
+        padding: 0 20px;
         /* width: 90%; */
         height: 255px;
         margin: auto;
@@ -43,6 +44,12 @@
     .previous, .next{
         width: 24px;
         height: 24px;
+    }
+    .previous{
+        left: 25px;
+    }
+    .next{
+        right: 25px;
     }
     .previousIcon, .nextIcon{
         width: 100%;

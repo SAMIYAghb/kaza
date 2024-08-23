@@ -20,7 +20,20 @@ const Collapse = ({ title, content}) => {
       </div>
       <div className={`${style.collapseBody} ${isOpen ? style.collapseBodyIsOpen : ''}`}>
       {/* <div className={`${style.collapseBody} ${isOpen ? style.animation : style.animationReverse}`}> */}
-        <p className={style.collapseText}>{content}</p>
+        {/* <p className={style.collapseText}>
+          {content}
+        </p> */}
+        {Array.isArray(content) ? (
+          <ul className={style.collapseList}>
+            {content.map((item, index) => (
+              <li key={index} className={style.collapseListItem}>
+                {item}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className={style.collapseText}>{content}</p>
+        )}
       </div>
       
     </div>
@@ -28,6 +41,6 @@ const Collapse = ({ title, content}) => {
 }
 Collapse.propTypes = {
   title: PropTypes.node.isRequired,
-  content: PropTypes.node.isRequired,
+  content: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 export default Collapse

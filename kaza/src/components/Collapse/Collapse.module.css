@@ -34,19 +34,28 @@
     padding: 15px 25px;
     display: none;
     border-radius: 5px;
+
+
 }
 .collapseBodyIsOpen{
     background-color: #F6F6F6;
     padding: 15px 25px;
     display: block;
     border-radius: 5px;
+
 }
 .collapseText{
     font-size: 18px;
     font-weight: 400;
     line-height: 25.67px;
 }
-
+.collapseList {
+    list-style-type: none;
+    padding-left: 0;
+}
+.collapseListItem {
+    margin-bottom: 8px;
+}
 @keyframes slideDown {
     from {
         transform: translateY(-66%) scaleY(0)

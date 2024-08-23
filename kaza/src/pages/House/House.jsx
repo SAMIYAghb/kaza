@@ -71,14 +71,8 @@ export default House
 // +add data + responsive page carrousel smarthphone image
 
 // +add googlefont Montserrat
-// +add
+// +add regler le probleme des collapse dans house
 
 // map pour itérer sur les valeurs [1, 2, 3, 4, 5] qui représentent les 5 étoiles. Chaque étoile est remplie si sa position est inférieure ou égale à la note.
 // Condition d'Affichage des Étoiles : Vérifie si la position de l'étoile (star) est inférieure ou égale à la note (rating). Si c'est le cas, l'étoile est remplie (active), sinon, elle est vide (inactive).
 
-{/* <img
-                      key={star}
-                      src={star <= house.rating ? active : inactive}
-                      alt="rate"
-                      className={style.rate}
-                    /> */}

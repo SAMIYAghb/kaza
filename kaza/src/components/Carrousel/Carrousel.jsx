@@ -24,23 +24,29 @@ const Carrousel = ({ images }) => {
   return (
     <div className={style.carrousel}>
       <div className={style.carrouselContent}>
+      {images.length > 1 && (
         <button
           onClick={prevSlide}
           className={style.previous}>
           <img src={left} alt="previous image"  className={style.previousIcon}/>
         </button>
+      )}
         <img src={images[currentIndex]} alt="" className={style.carrouselImg} />
+      {images.length > 1 && (
         <button
           onClick={nextSlide}
           className={style.next}>
           <img src={right} alt="next image" className={style.nextIcon}/>
         </button>
-        <span className={style.indicator}>1/4</span>
+      )}
+      {images.length > 1 && (
+        <span className={style.indicator}>{`${currentIndex + 1}/${images.length}`}</span>
+      )}
       </div>
     </div>
   )
 }
-Carrousel.prototype = {
-  images: PropTypes.node.isRequired,
+Carrousel.propTypes = {
+  images: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 export default Carrousel
