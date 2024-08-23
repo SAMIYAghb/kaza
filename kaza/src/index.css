@@ -2,18 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
-/* *{
-font-family: 'Montserrat', sans-serif;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-:root {
+/* :root {
   --main-color: #0065FC;
   --main-bg-color: #F2F2F2;
   --filter-bg-color: #DEEBFF;
-} */
- /* html{
-  background-color: chartreuse;
- } */
+}  */
