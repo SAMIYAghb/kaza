@@ -19,10 +19,6 @@ const Collapse = ({ title, content}) => {
         </span>
       </div>
       <div className={`${style.collapseBody} ${isOpen ? style.collapseBodyIsOpen : ''}`}>
-      {/* <div className={`${style.collapseBody} ${isOpen ? style.animation : style.animationReverse}`}> */}
-        {/* <p className={style.collapseText}>
-          {content}
-        </p> */}
         {Array.isArray(content) ? (
           <ul className={style.collapseList}>
             {content.map((item, index) => (
