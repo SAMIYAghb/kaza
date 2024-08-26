@@ -81,3 +81,9 @@
 .animationReverse {
     animation: 0.25s linear slideUp;
 }
+@media (max-width: 768px) {
+    .collapseTitle{   
+        font-size: 13px;
+        line-height: 18.54px;
+    }
+}

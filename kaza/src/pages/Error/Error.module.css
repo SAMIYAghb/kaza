@@ -25,10 +25,12 @@
         font-size: 18px;
         line-height: 25.67px;
         max-width: 260px;
+        text-align: center;
     }
     .errorLink{
         font-size: 14px;
         max-width: 221px;
+        text-align: center;
     }
 }
 @media (max-width: 480px) {

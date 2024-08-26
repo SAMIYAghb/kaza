@@ -6,7 +6,6 @@
     position: relative;
     margin: auto;
     color: #fff;
-    /* padding:  0 25px; */
     margin-bottom: 25px;
 }
 .bannerTitle{
@@ -34,13 +33,11 @@
         line-height: 24px;
         font-weight: 700;       
     }
-    
-}
-@media (max-width: 480px) {
     .bannerTitle{
-        /* max-width: 30%; */
+        width: 60%;
     }
 }
+
 /* @media (max-width: 992px){ 
     .imgBanner{
         width: 920px;
