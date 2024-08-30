@@ -12,9 +12,8 @@ const About = () => {
       <div className={style.about}>
         {
           collapseData.map((col) => (
-            // console.log(col)
-            // console.log(collapseData)
-             <Collapse key={col.id}
+             <Collapse 
+              key={col.id}
               title={col.title}
               content={col.content}
             />

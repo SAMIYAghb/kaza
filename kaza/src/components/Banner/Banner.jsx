@@ -7,7 +7,8 @@ function Banner({ bannerImage , bannerTitle}) {
         <div className={style.imgParent}>
           <img src={ bannerImage } alt="banner of kaza" className={style.imgBanner}/>
         </div>
-        <h1 className={style.bannerTitle}>{bannerTitle}</h1>
+        { bannerTitle && (<h1 className={style.bannerTitle}>{bannerTitle}</h1>) }
+        
     </div>
   )
 }

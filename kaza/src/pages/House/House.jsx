@@ -1,17 +1,17 @@
 
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import active from '../../assets/star-active.png';
 import inactive from '../../assets/star-inactive.png';
-// import data from '../../data/logements.json';
 import Carrousel from './../../components/Carrousel/Carrousel';
 import Collapse from './../../components/Collapse/Collapse';
-import Error from './../Error/Error';
+// import Error from './../Error/Error';
 import style from './House.module.css';
 import { getLogement } from '../../request/LogementRequest.js'
 import Tag from '../../components/Tag/Tag.jsx';
 import Rating from '../../components/Rating/Rating.jsx';
 
 const House = () => {
+  // const navigate = useNavigate();
   const { id } = useParams();
   // console.log(id) 
 
@@ -19,8 +19,10 @@ const House = () => {
   const house = getLogement(id);
   // console.log(house.pictures)
 
+  // +add useNagate
   if (!house) {
-    return <Error />
+    // return <Error />
+    return <Navigate to="*" />; 
   }
 
   return (
