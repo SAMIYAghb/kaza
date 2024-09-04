@@ -5,7 +5,6 @@
     row-gap: 60px;
     column-gap: 60px;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     flex-wrap: wrap;
 }

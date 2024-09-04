@@ -19,9 +19,6 @@ p{
 }
 
 @media (max-width: 768px) {
-    /* .footer{
-        height: 209px;
-    } */
     p{
         font-size: 18px;
     }

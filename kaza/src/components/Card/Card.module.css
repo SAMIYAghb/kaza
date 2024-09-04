@@ -1,17 +1,6 @@
-/* .cards{
-    background-color: #F6F6F6;
-    border-radius: 25px;
-    padding: 45px ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-} */
+
 .card{
     position: relative;
-    /* background-color: aquamarine; */
-    /* padding-bottom: 20px; */
-    /* width: 33%; */
     width: 340px;
     height: 340px;   
 }
@@ -38,13 +27,6 @@
     font-weight: 700;
     line-height: 25.67px;
 }
-
-/* @media (max-width: 768px) {
-    .card{
-        background-color: rgb(255, 196, 0);
-        width: calc((100% / 2) - 80px);
-    }
-} */
 @media (max-width: 480px) {
     .card{
         width: 100%;

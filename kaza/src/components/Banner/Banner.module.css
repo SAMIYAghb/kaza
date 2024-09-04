@@ -37,26 +37,3 @@
         width: 60%;
     }
 }
-
-/* @media (max-width: 992px){ 
-    .imgBanner{
-        width: 920px;
-    }
-  }
-  @media (max-width: 768px){ 
-    .imgBanner{
-        width: 680px;
-    }
-  }
-  @media (max-width: 576px){ 
-    .imgBanner{
-        width: 500px;
-    }
-  }
-    @media (max-width: 480px) {
-    .imgBanner{
-        width: 335px;
-        height: 111px;
-    }
-
-} */

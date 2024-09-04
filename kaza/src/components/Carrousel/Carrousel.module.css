@@ -37,7 +37,6 @@
 @media (max-width: 768px) {
     .carrouselImg{
         padding: 0 20px;
-        /* width: 90%; */
         height: 255px;
         margin: auto;
     }

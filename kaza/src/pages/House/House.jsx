@@ -11,17 +11,12 @@ import Tag from '../../components/Tag/Tag.jsx';
 import Rating from '../../components/Rating/Rating.jsx';
 
 const House = () => {
-  // const navigate = useNavigate();
   const { id } = useParams();
-  // console.log(id) 
 
   // Trouver la maison correspondant à l'ID
   const house = getLogement(id);
-  // console.log(house.pictures)
 
-  // +add useNagate
   if (!house) {
-    // return <Error />
     return <Navigate to="*" />; 
   }
 
@@ -76,9 +71,6 @@ export default House
 
 
 
-// +add animation ouvre collapse dans house / about
-// +add tite banner dans house responsive
-// +add texte banner dans 404 responsive
 
 // map pour itérer sur les valeurs [1, 2, 3, 4, 5] qui représentent les 5 étoiles. Chaque étoile est remplie si sa position est inférieure ou égale à la note.
 // Condition d'Affichage des Étoiles : Vérifie si la position de l'étoile (star) est inférieure ou égale à la note (rating). Si c'est le cas, l'étoile est remplie (active), sinon, elle est vide (inactive).
